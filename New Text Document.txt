@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratham Raghav - Portfolio (25A04/068)</title>
+    
+    <!-- Load Tailwind CSS CDN for modern, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Load Poppins from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Load Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* Custom Styles to integrate Poppins and define color variables */
+        :root {
+            /* Mapped to Tailwind classes for consistency */
+            --primary-color: #2563EB; /* Blue-600 */
+            --text-color: #1F2937; /* Gray-800 */
+            --bg-light: #F9FAFB; /* Gray-50 */
+            --bg-dark: #E5E7EB; /* Gray-200 for alternating sections */
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-color);
+            background-color: var(--bg-light);
+            scroll-behavior: smooth;
+        }
+
+        /* Styling for the sticky navigation bar */
+        header {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style for the professional image */
+        .profile-img {
+            border: 4px solid var(--primary-color);
+        }
+
+        /* Alternating background color for sections */
+        .section-even {
+            background-color: var(--bg-dark);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar (Sticky Header) -->
+    <header id="navbar" class="sticky top-0 bg-white z-50 p-4">
+        <nav class="container mx-auto flex justify-between items-center px-4">
+            <div class="text-xl font-bold text-gray-800">Pratham Raghav</div>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="text-gray-600 hover:text-blue-600 font-semibold transition duration-300">Home</a></li>
+                <li><a href="#about" class="text-gray-600 hover:text-blue-600 font-semibold transition duration-300">About Me</a></li>
+                <li><a href="#skills" class="text-gray-600 hover:text-blue-600 font-semibold transition duration-300">Skills</a></li>
+                <li><a href="#projects" class="text-gray-600 hover:text-blue-600 font-semibold transition duration-300">Projects</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-blue-600 font-semibold transition duration-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. Home Section (Hero) -->
+        <section id="home" class="h-screen flex items-center justify-center text-center bg-gray-50">
+            <div class="max-w-4xl p-8">
+                <!-- Replace with your actual image URL or a placeholder -->
+                <img src="https://placehold.co/150x150/2563EB/FFFFFF?text=PR" alt="Professional Headshot of Pratham Raghav" 
+                     class="profile-img w-36 h-36 rounded-full mx-auto mb-6 object-cover shadow-lg">
+                
+                <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight">
+                    Hi, I'm <span class="text-blue-600">Pratham Raghav</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 mt-4">
+                    Roll No: 25A04/068 | A passionate **Web Developer** focused on creating user-friendly and responsive interfaces.
+                </p>
+                <a href="#projects" class="mt-8 inline-block bg-blue-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105">
+                    View My Work
+                </a>
+            </div>
+        </section>
+
+        <!-- 2. About Me Section -->
+        <section id="about" class="py-20 section-even">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <h2 class="text-4xl font-bold text-center mb-10 text-blue-600">About Me</h2>
+                <div class="bg-white p-8 rounded-xl shadow-2xl text-lg leading-relaxed">
+                    <p class="mb-4">
+                        I am a dedicated student with a strong interest in front-end development, specifically leveraging the power of **HTML, CSS, and JavaScript** to build robust and aesthetically pleasing websites. My commitment is to continuous learning and applying technical skills to solve real-world problems.
+                    </p>
+                    <p>
+                        Beyond coding, I focus on design principles, user experience (UX), and ensuring high accessibility standards in all my projects. I am eager to contribute to collaborative teams and take on challenging development tasks.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Education / Skills Section -->
+        <section id="skills" class="py-20 bg-white">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <h2 class="text-4xl font-bold text-center mb-12 text-blue-600">Education & Skills</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <!-- Skills Card -->
+                    <div class="p-8 bg-gray-50 rounded-xl shadow-lg border-t-4 border-blue-600">
+                        <h3 class="text-2xl font-semibold mb-4 flex items-center text-gray-800">
+                            <i class="fas fa-laptop-code mr-3 text-blue-600"></i> Technical Expertise
+                        </h3>
+                        <ul class="space-y-3 text-left list-disc list-inside text-gray-700">
+                            <li>**Languages:** HTML5, CSS3, JavaScript (ES6+)</li>
+                            <li>**Frameworks/Libraries:** Tailwind CSS, Bootstrap (Familiarity)</li>
+                            <li>**Tools & Concepts:** Git, GitHub, VS Code, Responsive Design, UX/UI Principles</li>
+                            <li>**Other:** [Your specific relevant skill]</li>
+                        </ul>
+                    </div>
+
+                    <!-- Education Card -->
+                    <div class="p-8 bg-gray-50 rounded-xl shadow-lg border-t-4 border-blue-600">
+                        <h3 class="text-2xl font-semibold mb-4 flex items-center text-gray-800">
+                            <i class="fas fa-graduation-cap mr-3 text-blue-600"></i> Education History
+                        </h3>
+                        <div class="space-y-4 text-left">
+                            <div class="border-l-4 border-gray-400 pl-4">
+                                <h4 class="text-xl font-bold">Bachelor of Technology in [Your Stream]</h4>
+                                <p class="text-gray-600">**[University/Institution Name]**</p>
+                                <p class="text-sm italic">2023 - 2027 (Expected)</p>
+                            </div>
+                            <div class="border-l-4 border-gray-400 pl-4">
+                                <h4 class="text-xl font-bold">Higher Secondary Education</h4>
+                                <p class="text-gray-600">**[School Name]**</p>
+                                <p class="text-sm italic">Graduation Year</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Projects / Portfolio Section -->
+        <section id="projects" class="py-20 section-even">
+            <div class="container mx-auto px-4 max-w-5xl">
+                <h2 class="text-4xl font-bold text-center mb-12 text-blue-600">Projects / Portfolio</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    
+                    <!-- Project Card 1 -->
+                    <div class="project-card bg-white p-6 rounded-xl shadow-xl transition duration-300 hover:shadow-2xl hover:border-b-4 hover:border-blue-600">
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">Responsive Layout Master</h3>
+                        <p class="text-gray-600 mb-4">
+                            A front-end project demonstrating advanced CSS Grid and Flexbox techniques to achieve pixel-perfect, mobile-first responsiveness across all device sizes.
+                        </p>
+                        <p class="text-sm font-medium mb-4 text-blue-600">Technologies: HTML5, CSS3, Tailwind CSS</p>
+                        <div class="flex space-x-4">
+                            <a href="#" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium">
+                                <i class="fas fa-link mr-1"></i> View Live (Placeholder)
+                            </a>
+                            <a href="#" target="_blank" class="text-gray-700 hover:text-gray-900 font-medium">
+                                <i class="fab fa-github mr-1"></i> GitHub Repo (Placeholder)
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Card 2 -->
+                    <div class="project-card bg-white p-6 rounded-xl shadow-xl transition duration-300 hover:shadow-2xl hover:border-b-4 hover:border-blue-600">
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">Interactive JavaScript Quiz</h3>
+                        <p class="text-gray-600 mb-4">
+                            An interactive quiz application built with vanilla JavaScript, focusing on DOM manipulation, state management, and displaying dynamic results without page reloads.
+                        </p>
+                        <p class="text-sm font-medium mb-4 text-blue-600">Technologies: HTML5, CSS3, Vanilla JavaScript</p>
+                        <div class="flex space-x-4">
+                            <a href="#" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium">
+                                <i class="fas fa-link mr-1"></i> View Live (Placeholder)
+                            </a>
+                            <a href="#" target="_blank" class="text-gray-700 hover:text-gray-900 font-medium">
+                                <i class="fab fa-github mr-1"></i> GitHub Repo (Placeholder)
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Contact Information Section -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="container mx-auto px-4 max-w-3xl text-center">
+                <h2 class="text-4xl font-bold mb-6 text-blue-600">Get in Touch</h2>
+                <p class="text-lg text-gray-600 mb-8">
+                    I am actively seeking new opportunities and challenges. Feel free to connect with me!
+                </p>
+
+                <!-- Contact Details -->
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-10 text-gray-700 mb-10">
+                    <div class="flex items-center justify-center">
+                        <i class="fas fa-envelope text-blue-600 text-2xl mr-3"></i>
+                        <p class="font-medium">[Your-Email]@example.com</p>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <i class="fas fa-phone text-blue-600 text-2xl mr-3"></i>
+                        <p class="font-medium">[Your Phone Number]</p>
+                    </div>
+                </div>
+
+                <!-- External Profile Links -->
+                <div class="social-links flex justify-center space-x-6">
+                    <!-- LinkedIn -->
+                    <a href="[Your LinkedIn URL]" target="_blank" aria-label="LinkedIn Profile" 
+                       class="text-gray-600 hover:text-blue-600 transition duration-300 transform hover:scale-110">
+                        <i class="fab fa-linkedin fa-3x"></i>
+                    </a>
+                    <!-- GitHub -->
+                    <a href="[Your GitHub URL]" target="_blank" aria-label="GitHub Profile" 
+                       class="text-gray-600 hover:text-blue-600 transition duration-300 transform hover:scale-110">
+                        <i class="fab fa-github fa-3x"></i>
+                    </a>
+                    <!-- Optional: Twitter/X -->
+                    <a href="[Your X/Twitter URL]" target="_blank" aria-label="X (Twitter) Profile" 
+                       class="text-gray-600 hover:text-blue-600 transition duration-300 transform hover:scale-110">
+                        <i class="fab fa-twitter fa-3x"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm">
+                &copy; 2025 Pratham Raghav. All rights reserved.
+            </p>
+            <p class="text-xs mt-1 text-gray-400">
+                Designed with HTML, Tailwind CSS, and Poppins.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
